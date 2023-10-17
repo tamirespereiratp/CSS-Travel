@@ -290,6 +290,7 @@ i#hamburguer {
 }
 
 #three h2 {
+    padding-top: 20px;
     font-size: 2em;
     font-weight: 300;
     letter-spacing: 0.225em;
@@ -435,11 +436,11 @@ form > h3 {
 }
 
 .destinos .places {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 .destinos h2 {
-    padding-top: 20px;
+    padding-top: 30px;
     width: 80%;
     margin: auto;
     background-color: #595958;
