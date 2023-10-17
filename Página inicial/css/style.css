@@ -71,6 +71,7 @@ ul {
     text-align: center;
     text-transform: uppercase;
     box-sizing: border-box;
+    margin-left: 2em;
 }
 
     .button:hover {
@@ -204,7 +205,6 @@ i#hamburguer {
 
 #banner-pages > p {
     font-size: 1.3em;
-    width: 30em;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 1em;
@@ -239,7 +239,6 @@ i#hamburguer {
 
 #one.style1 > p {
     text-align: justify;
-    font-size: 1.3em;
     letter-spacing: 3px;
     padding: 1em 1em;
     width: 80%;
@@ -258,7 +257,7 @@ i#hamburguer {
 }
 
 #two.style1 .content {
-    padding: 7rem 7rem 5rem 7rem ;
+    padding: 7rem 0 5rem 0;
     align-self: center;
     flex-grow: 1;
     flex-shrink: 1;
@@ -267,18 +266,21 @@ i#hamburguer {
 }
 
 #two.style1 .content h2 {
-    padding-bottom: 1em;
+    padding: 1em;
     font-size: 2em;
     font-weight: 300;
     letter-spacing: 0.225em;
     text-transform: uppercase;
     color: #fff;
+    max-width: 50%;
 }
 
 #two.style1 .content p {
+    padding: 0 2em;
     letter-spacing: 0.1em;
     text-align: justify;
 }
+
 
 /* Three */
 #three {
@@ -299,10 +301,11 @@ i#hamburguer {
     background-color: #594336;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 10px;
     box-sizing: border-box;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .container h3 {
@@ -382,15 +385,17 @@ footer .copyright {
 form {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 0 2em;
 }
 
 form input, form textarea {
     margin-bottom: 16px;
-    padding: 6px 2px;
+    padding: 3px 0;
 }
 
 form > h3 {
-    padding: 30px 0 15px 0;
+    padding-top: 10px;
     letter-spacing: 3px;
     font-size: 1.5em;
 }
@@ -410,32 +415,83 @@ form > h3 {
     display: block;
 }
 
+
+@media screen and (max-width: 900px) {
+    #two .image {
+        display: none;
+    }
+    
+}
+
 /* Página de destinos */
 
 .destinos {
-    padding: 10px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #595958;
+    height: auto;
+    display: block;
+    align-items: center;
 }
 
-.destinos > p {
-    text-align: justify;
+.destinos .places {
+    padding-bottom: 70px;
+}
+
+.destinos h2 {
+    padding-top: 20px;
+    width: 80%;
     margin: auto;
-    padding: 10px;
+    background-color: #595958;
+    height: auto;
+    display: block;
+    align-items: center;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.destinos p {
+    padding-bottom: 50px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #595958;
+    height: auto;
+    display: block;
+    align-items: center;
+    letter-spacing: 0.1em;
+}
+
+video  {
+    padding: 10px 0 0 0;
+    width: 500px;
+    display: flex;
+    margin: 0 auto;    
+    align-self: center;
+}
+
+@media screen and (max-width: 900px) {
+    video  {
+        padding: 10px;
+        width: 300px;
+        display: flex;
+        margin: auto;    
+        align-self: center;
+    }  
 }
 
 /* Carossel */
 
 section.slider {
     margin: 0 auto;
-    width: 70%;
+    width: 550px;
     height: auto;
     padding: 0 !important;
     overflow: hidden;
 }
 
 .slider-content {
-    width: 300%;
     display: flex;
-    height: auto;
 }
 
 .slider-content input, .img-mobile {
@@ -443,7 +499,7 @@ section.slider {
 }
 
 .slide-box {
-    width: 35%;
+    width: 100%;
     height: auto;
     position: relative;
     text-align: center;
@@ -451,44 +507,68 @@ section.slider {
 }
 
 .slide-box img {
-    width: 100%;
+    width: 550px;
+    height: 700px;
+    margin: 0;
 }
 
 .nav-manual {
     position: absolute;
-    width: 70%;
-    margin-top: 46%;
     display: flex;
-    justify-content: center;
+    width: 70%;
+    align-self: flex-end;
 }
 
-.nav-manual .manual-btn {
-    border: 1px solid #594336;
+.nav-manual .manual-btn, .nav-manual .manual-btn1, .nav-manual .manual-btn2, .nav-manual .manual-btn3, .nav-manual .manual-btn4, .nav-manual .manual-btn5, .nav-manual .manual-btn6, .nav-manual .manual-btn7, .nav-manual .manual-btn8, .nav-manual .manual-btn9 {
+    border: 1px solid #fff;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    margin-bottom: 100px;
 }
 
-.nav-manual .manual-btn:not(:last-child) {
-    margin-right: 10px;
+.nav-manual .manual-btn:not(:last-child), .nav-manual .manual-btn1:not(:last-child), .nav-manual .manual-btn2:not(:last-child), .nav-manual .manual-btn3:not(:last-child), .nav-manual .manual-btn4:not(:last-child), .nav-manual .manual-btn5:not(:last-child), .nav-manual .manual-btn6:not(:last-child), .nav-manual .manual-btn7:not(:last-child), .nav-manual .manual-btn8:not(:last-child), .nav-manual .manual-btn9:not(:last-child) {
+    margin-right: 5px;
 }
 
-.nav-manual .manual-btn:hover {
-    background-color: #594336;
+.nav-manual .manual-btn:hover, .nav-manual .manual-btn1:hover, .nav-manual .manual-btn2:hover, .nav-manual .manual-btn3:hover, .nav-manual .manual-btn4:hover, .nav-manual .manual-btn5:hover, .nav-manual .manual-btn6:hover, .nav-manual .manual-btn7:hover, .nav-manual .manual-btn8:hover, .nav-manual .manual-btn9:hover {
+    background-color: #fff;
     transition: 0.2s;
 }
 
-#radio1:checked ~ .primeiro {
-    margin-left: 0%;
+#radio1:checked ~ .primeiro, #radiog1:checked ~ .primeiro, #radiou1:checked ~ .primeiro, #radiot1:checked ~ .primeiro, #radiosb1:checked ~ .primeiro, #radiol1:checked ~ .primeiro, #radiorc1:checked ~ .primeiro, #radiojb1:checked ~ .primeiro, #radiorj1:checked ~ .primeiro, #radioi1:checked ~ .primeiro {
+    margin-left: 0;
 }
 
-#radio2:checked ~ .primeiro {
-    margin-left: -36%;
+#radio2:checked ~ .primeiro, #radiog2:checked ~ .primeiro, #radiou2:checked ~ .primeiro, #radiot2:checked ~ .primeiro, #radiosb2:checked ~ .primeiro, #radiol2:checked ~ .primeiro, #radiorc2:checked ~ .primeiro, #radiojb2:checked ~ .primeiro, #radiorj2:checked ~ .primeiro, #radioi2:checked ~ .primeiro {
+    margin-left: -550px;
 }
 
-#radio3:checked ~ .primeiro {
-    margin-left: -70%;
+#radio3:checked ~ .primeiro, #radiog3:checked ~ .primeiro, #radiou3:checked ~ .primeiro, #radiot3:checked ~ .primeiro, #radiosb3:checked ~ .primeiro, #radiol3:checked ~ .primeiro, #radiorc3:checked ~ .primeiro, #radiojb3:checked ~ .primeiro, #radiorj3:checked ~ .primeiro, #radioi3:checked ~ .primeiro {
+    margin-left: -1100px;
+}
+
+#radio4:checked ~ .primeiro, #radiog4:checked ~ .primeiro, #radiou4:checked ~ .primeiro, #radiot4:checked ~ .primeiro, #radiol4:checked ~ .primeiro, #radiorc4:checked ~ .primeiro, #radiojb4:checked ~ .primeiro, #radiorj4:checked ~ .primeiro, #radioi4:checked ~ .primeiro {
+    margin-left: -1650px;
+}
+
+#radio5:checked ~ .primeiro, #radiog5:checked ~ .primeiro, #radiou5:checked ~ .primeiro, #radiot5:checked ~ .primeiro, #radiol5:checked ~ .primeiro, #radiorc5:checked ~ .primeiro, #radiojb5:checked ~ .primeiro, #radiorj5:checked ~ .primeiro, #radioi5:checked ~ .primeiro {
+    margin-left: -2200px;
+}
+
+#radio6:checked ~ .primeiro, #radiog6:checked ~ .primeiro, #radiou6:checked ~ .primeiro, #radiot6:checked ~ .primeiro, #radiorc6:checked ~ .primeiro, #radiojb6:checked ~ .primeiro, #radiorj6:checked ~ .primeiro, #radioi6:checked ~ .primeiro {
+    margin-left: -2750px;
+}
+
+#radio7:checked ~ .primeiro, #radiou7:checked ~ .primeiro, #radiorc7:checked ~ .primeiro, #radiojb7:checked ~ .primeiro {
+    margin-left: -3300px;
+}
+
+#radio8:checked ~ .primeiro, #radiou8:checked ~ .primeiro {
+    margin-left: -3850px;
+}
+
+#radio9:checked ~ .primeiro, #radiou9:checked ~ .primeiro {
+    margin-left: -4400px;
 }
 
 @media screen and (max-width: 900px) {
@@ -500,7 +580,56 @@ section.slider {
         display: block;
     }
 
+    section.slider {
+        width: 300px;
+    }
+    
+    .slide-box img {
+        width: 300px;
+        height: 370px;
+    }
+
     .nav-manual {
-        margin-top: 60%;
+        position: absolute;
+        display: flex;
+        width: 70%;
+        align-self: flex-end;
+    }
+
+    
+    #radio1:checked ~ .primeiro, #radiog1:checked ~ .primeiro, #radiou1:checked ~ .primeiro, #radiot1:checked ~ .primeiro, #radiosb1:checked ~ .primeiro, #radiol1:checked ~ .primeiro, #radiorc1:checked ~ .primeiro, #radiojb1:checked ~ .primeiro, #radiorj1:checked ~ .primeiro, #radioi1:checked ~ .primeiro {
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .primeiro, #radiog2:checked ~ .primeiro, #radiou2:checked ~ .primeiro, #radiot2:checked ~ .primeiro, #radiosb2:checked ~ .primeiro, #radiol2:checked ~ .primeiro, #radiorc2:checked ~ .primeiro, #radiojb2:checked ~ .primeiro, #radiorj2:checked ~ .primeiro, #radioi2:checked ~ .primeiro {
+        margin-left: -300px;
+    }
+
+    #radio3:checked ~ .primeiro, #radiog3:checked ~ .primeiro, #radiou3:checked ~ .primeiro, #radiot3:checked ~ .primeiro, #radiosb3:checked ~ .primeiro, #radiol3:checked ~ .primeiro, #radiorc3:checked ~ .primeiro, #radiojb3:checked ~ .primeiro, #radiorj3:checked ~ .primeiro, #radioi3:checked ~ .primeiro {
+        margin-left: -600px;
+    }
+
+    #radio4:checked ~ .primeiro, #radiog4:checked ~ .primeiro, #radiou4:checked ~ .primeiro, #radiot4:checked ~ .primeiro, #radiol4:checked ~ .primeiro, #radiorc4:checked ~ .primeiro, #radiojb4:checked ~ .primeiro, #radiorj4:checked ~ .primeiro, #radioi4:checked ~ .primeiro {
+        margin-left: -900px;
+    }
+
+    #radio5:checked ~ .primeiro, #radiog5:checked ~ .primeiro, #radiou5:checked ~ .primeiro, #radiot5:checked ~ .primeiro, #radiol5:checked ~ .primeiro, #radiorc5:checked ~ .primeiro, #radiojb5:checked ~ .primeiro, #radiorj5:checked ~ .primeiro, #radioi5:checked ~ .primeiro {
+        margin-left: -1200px;
+    }
+
+    #radio6:checked ~ .primeiro, #radiog6:checked ~ .primeiro, #radiou6:checked ~ .primeiro, #radiot6:checked ~ .primeiro, #radiorc6:checked ~ .primeiro, #radiojb6:checked ~ .primeiro, #radiorj6:checked ~ .primeiro, #radioi6:checked ~ .primeiro {
+        margin-left: -1500px;
+    }
+
+    #radio7:checked ~ .primeiro, #radiou7:checked ~ .primeiro, #radiorc7:checked ~ .primeiro, #radiojb7:checked ~ .primeiro {
+        margin-left: -1800px;
+    }
+
+    #radio8:checked ~ .primeiro, #radiou8:checked ~ .primeiro {
+        margin-left: -2100px;
+    }
+
+    #radio9:checked ~ .primeiro, #radiou9:checked ~ .primeiro {
+        margin-left: -2400px;
     }
 }
