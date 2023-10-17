@@ -1,0 +1,508 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Barcode+128+Text&family=Shadows+Into+Light+Two&family=Zen+Tokyo+Zoo&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0D0D0D;
+}
+
+main  {
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+
+section > h2, h3 {
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h5 {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+section > p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+p, h1, h2, h3 {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0 0 2rem 0;
+}
+
+/* Botão */
+
+.button {
+    background-color: transparent;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #fff;
+    cursor: pointer;
+	display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+	height: 3.125em;
+    letter-spacing: 0.225em;
+    line-height: 3.125em;
+    margin: 1em 0;
+    margin-top: 1em;
+    max-width: 30em;
+    padding: 0 2.75em;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+    .button:hover {
+        background-color: #595958;
+    }
+
+/* Menu */
+
+.logo {
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+header {
+    margin: auto 0;
+    height: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+menu {
+    padding-top: 30px;
+    display: block;
+    gap: 32px;
+    list-style: none;
+}
+
+    menu > li > a {
+        font-size: 1em;
+        color: #fff;
+        padding: 0 10px;
+        letter-spacing: 3px;
+        align-items: center;
+        border-radius: 2px;
+        display: none;
+    }
+
+        menu > li > a:hover {
+            background-color: #595958;
+        }
+
+i#hamburguer {
+    background-color: #0D0D0D;
+    color: #fff;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+
+/* Banner */
+
+#banner {
+    background: url('../images/banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    padding: 0;
+    height: 80vh;
+}
+
+    #banner .inner {
+        position: relative;
+        margin: 0 auto;
+        padding-top: 15em;
+        padding-bottom: 15em;
+        text-align: center;
+    }
+
+        #banner .inner h2 {
+            display: inline-block;
+            font-size: 3em;
+            opacity: 1;
+            padding: 0.5em 0;
+            color: #fff;
+            text-shadow: 2px  2px 5px #595958;
+        }
+
+            #banner h2:before, #banner h2:after {
+                background: #fff;
+                content: '';
+                display: block;
+                height: 3px;
+                width: 100%;
+            }
+        
+        #banner .inner > p {
+            font-size: 1.3em;
+            padding-bottom: 1em;
+            letter-spacing: 5px;
+            color: #fff;
+            text-shadow: 2px  2px 5px #595958;
+        }
+
+/* Banner página Destinos */
+
+#banner-pages {
+    background: url('../images/bannerpages.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    padding: 15em 0;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+}
+
+    #banner-pages h2 {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3em;
+        opacity: 1;
+        padding: 0.5em 0;
+        position: relative;
+        color: #fff;
+        text-shadow: 2px  2px 5px #595958;
+    }
+        
+        #banner-pages h2:before, #banner-pages h2:after {
+            background: #fff;
+            content: '';
+            display: block;
+            height: 3px;
+            width: 100%;
+        }
+    
+    #banner-pages > p {
+        font-size: 1.3em;
+        width: 30em;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 1em;
+        letter-spacing: 5px;
+        color: #fff;
+        text-shadow: 2px  2px 5px #595958;
+    }
+
+/* One */
+
+#one.style1 {
+    margin-top: -1em;
+    padding: 6em 0 6em 0;
+    background-color: #595958;
+    height: auto;
+    align-items: center;
+}
+
+    #one.style1 > h2 {
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 5px;
+        border-bottom: 2px solid white;
+        position: relative;
+        width: 100%;
+        font-weight: 300;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        letter-spacing: 0.225em;
+        text-transform: uppercase;
+    }
+
+        #one.style1 > p {
+            text-align: justify;
+            font-size: 1.3em;
+            letter-spacing: 3px;
+            padding: 1em 1em;
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+
+/* Two */
+
+#two.style1 {
+    background-color: #26010B;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-align: left;
+}
+
+    #two.style1 .content {
+        padding: 7rem 7rem 5rem 7rem ;
+        align-self: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+        #two.style1 .content > h2 {
+            padding-bottom: 1em;
+            font-size: 2em;
+            font-weight: 300;
+            letter-spacing: 0.225em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        #two.style1 .content > p {
+            letter-spacing: 0.1em;
+        }
+
+/* Three */
+
+#three {
+    background-color: #594336;
+    text-align: center;
+    padding: 20px;
+}
+
+    #three > h2 {
+        font-size: 2em;
+        font-weight: 300;
+        letter-spacing: 0.225em;
+        text-transform: uppercase;
+    }
+
+/* Container */
+
+.container {
+    background-color: #594336;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+    .container h3 {
+        font-size: 1.3em;
+        font-weight: 300;
+        letter-spacing: 0.225em;
+        text-transform: uppercase;
+    }
+
+    .container p {
+        padding-bottom: 1em;
+        font-size: 1em;
+        font-weight: 300;
+        letter-spacing: 0.070em;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    .container .card {
+        max-width: 33%;
+    }
+
+    .card img {
+        width: 100%;
+        display: block;
+    }
+
+/* Image */
+
+.image {
+    border: 0;
+    display: inline-block;
+}
+
+    .image img {
+        display: block;
+    }
+
+/* Footer */
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+}
+
+    footer .icons a {
+        color: #fff;
+        background-color: #594336;
+        width: 50px;
+        height: 50px;
+        margin: 30px 5px 5px 5px ;
+        border-radius: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        font-size: 30px;
+    }
+
+        footer .icons a:hover {
+            background-color: #595958;
+        }
+
+footer .copyright {
+    color: white;
+    font-size: 1em;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+/* Página de contato */
+
+form > h3 {
+    padding: 30px 0 15px 0;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+}
+
+fieldset {
+    border: 0;
+    letter-spacing: 3px;
+}
+
+input, select, textarea {
+    border-radius: 3px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+    .campo > label {
+        margin-bottom: 0.2em;
+        display: block;
+    }
+
+.campo input[type="text"], .campo input[type="email"], .campo textarea {
+    padding: 0.2em;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+    display: block;
+}
+
+/* Página de destinos */
+
+.destinos {
+    padding: 10px;
+}
+
+.destinos > p {
+    text-align: justify;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Carossel */
+
+section.slider {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 300%;
+    display: flex;
+    height: auto;
+}
+
+.slider-content input, .img-mobile {
+    display: none;
+}
+
+.slide-box {
+    width: 35%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual {
+    position: absolute;
+    width: 70%;
+    margin-top: 46%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn {
+    border: 1px solid #594336;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.nav-manual .manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #594336;
+    transition: 0.2s;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -36%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -70%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .nav-manual {
+        margin-top: 60%;
+    }
+}
