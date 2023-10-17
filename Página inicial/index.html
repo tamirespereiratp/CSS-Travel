@@ -14,14 +14,14 @@
     <header>
         <a href="index.html" class="logo">Infinita Highway</a>
         <i id="hamburguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>   
-        <menu id="itens">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Página de viagens/destinos.html">Destinos</a></li>
-                <li><a href="Página de contato/contato.html">Contato</a></li>   
-            </ul>
-        </menu>
     </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Página de viagens/destinos.html">Destinos</a></li>
+            <li><a href="Página de contato/contato.html">Contato</a></li>   
+        </ul>
+    </nav>
         
     <section id="banner">
         <div class="inner">
@@ -90,11 +90,13 @@
         </footer>
     </main>
     <script>
+        const menu = document.querySelector('.menu');
+
         function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
             } else {
-                itens.style.display = 'block'
+                menu.style.display = 'block'
             }
         }
     </script>

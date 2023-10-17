@@ -12,7 +12,6 @@
 
 html, body {
     height: 100vh;
-    width: 100vw;
     background-color: #0D0D0D;
 }
 
@@ -68,7 +67,6 @@ ul {
     line-height: 3.125em;
     margin: 1em 0;
     margin-top: 1em;
-    max-width: 30em;
     padding: 0 2.75em;
     text-align: center;
     text-transform: uppercase;
@@ -89,33 +87,36 @@ ul {
 
 header {
     margin: auto 0;
-    height: 70px auto;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
+    padding: 5px 50px;
 }
 
-menu {
-    padding-top: 30px;
-    display: block;
-    gap: 32px;
-    list-style: none;
+.menu {
+    top: 70px;
+    left: 0px;
+    width: 100%;
 }
 
-    menu > li > a {
-        font-size: 1em;
-        color: #fff;
-        padding: 0 10px;
-        letter-spacing: 3px;
-        align-items: center;
-        border-radius: 2px;
-        display: none;
-    }
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    background-color: #595958a2;
+}
 
-        menu > li > a:hover {
-            background-color: #595958;
-        }
+.menu li {
+    text-align: center;
+    padding: 10px;
+}
+
+.menu li:not(:last-of-type) {
+    border-bottom: 1px solid #CCC;
+}
+
 
 i#hamburguer {
     background-color: #0D0D0D;
@@ -133,41 +134,41 @@ i#hamburguer {
     background-position: center;
     margin: 0 auto;
     padding: 0;
-    height: 80vh;
+    height: 800px;
 }
 
-    #banner .inner {
-        position: relative;
-        margin: 0 auto;
-        padding-top: 15em;
-        padding-bottom: 15em;
-        text-align: center;
-    }
+#banner .inner {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    text-align: center;
+}
 
-        #banner .inner h2 {
-            display: inline-block;
-            font-size: 3em;
-            opacity: 1;
-            padding: 0.5em 0;
-            color: #fff;
-            text-shadow: 2px  2px 5px #595958;
-        }
+#banner .inner h2 {
+    display: inline-block;
+    font-size: 3em;
+    opacity: 1;
+    padding: 0.5em 0;
+    color: #fff;
+    text-shadow: 2px  2px 5px #595958;
+}
 
-            #banner h2:before, #banner h2:after {
-                background: #fff;
-                content: '';
-                display: block;
-                height: 3px;
-                width: 100%;
-            }
-        
-        #banner .inner > p {
-            font-size: 1.3em;
-            padding-bottom: 1em;
-            letter-spacing: 5px;
-            color: #fff;
-            text-shadow: 2px  2px 5px #595958;
-        }
+#banner h2:before, #banner h2:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+}
+
+#banner .inner > p {
+    font-size: 1.3em;
+    padding-bottom: 1em;
+    letter-spacing: 5px;
+    color: #fff;
+    text-shadow: 2px  2px 5px #595958;
+}
 
 /* Banner página Destinos */
 
@@ -175,46 +176,44 @@ i#hamburguer {
     background: url('../images/bannerpages.jpg') no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    position: relative;
     padding: 15em 0;
     display: flex;
     flex-direction: column;
     height: 20vh;
 }
 
-    #banner-pages h2 {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 3em;
-        opacity: 1;
-        padding: 0.5em 0;
-        position: relative;
-        color: #fff;
-        text-shadow: 2px  2px 5px #595958;
-    }
-        
-        #banner-pages h2:before, #banner-pages h2:after {
-            background: #fff;
-            content: '';
-            display: block;
-            height: 3px;
-            width: 100%;
-        }
+#banner-pages h2 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+    opacity: 1;
+    padding: 0.5em 0;
+    position: relative;
+    color: #fff;
+    text-shadow: 2px  2px 5px #595958;
+}
     
-    #banner-pages > p {
-        font-size: 1.3em;
-        width: 30em;
-        margin: 0 auto;
-        text-align: center;
-        padding-bottom: 1em;
-        letter-spacing: 5px;
-        color: #fff;
-        text-shadow: 2px  2px 5px #595958;
-    }
+#banner-pages h2:before, #banner-pages h2:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+}
+
+#banner-pages > p {
+    font-size: 1.3em;
+    width: 30em;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1em;
+    letter-spacing: 5px;
+    color: #fff;
+    text-shadow: 2px  2px 5px #595958;
+}
 
 /* One */
-
 #one.style1 {
     margin-top: -1em;
     padding: 6em 0 6em 0;
@@ -223,33 +222,32 @@ i#hamburguer {
     align-items: center;
 }
 
-    #one.style1 > h2 {
-        color: white;
-        text-align: center;
-        font-size: 2em;
-        letter-spacing: 5px;
-        border-bottom: 2px solid white;
-        position: relative;
-        width: 100%;
-        font-weight: 300;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        letter-spacing: 0.225em;
-        text-transform: uppercase;
-    }
+#one.style1 > h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 5px;
+    border-bottom: 2px solid white;
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+}
 
-        #one.style1 > p {
-            text-align: justify;
-            font-size: 1.3em;
-            letter-spacing: 3px;
-            padding: 1em 1em;
-            width: 80%;
-            margin: auto;
-            position: relative;
-        }
+#one.style1 > p {
+    text-align: justify;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    padding: 1em 1em;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
 
 /* Two */
-
 #two.style1 {
     background-color: #26010B;
     align-items: stretch;
@@ -259,45 +257,44 @@ i#hamburguer {
     text-align: left;
 }
 
-    #two.style1 .content {
-        padding: 7rem 7rem 5rem 7rem ;
-        align-self: center;
-        flex-grow: 1;
-        flex-shrink: 1;
-        width: 80%;
-        margin: 0 auto;
-    }
+#two.style1 .content {
+    padding: 7rem 7rem 5rem 7rem ;
+    align-self: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 80%;
+    margin: 0 auto;
+}
 
-        #two.style1 .content > h2 {
-            padding-bottom: 1em;
-            font-size: 2em;
-            font-weight: 300;
-            letter-spacing: 0.225em;
-            text-transform: uppercase;
-            color: #fff;
-        }
+#two.style1 .content h2 {
+    padding-bottom: 1em;
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    color: #fff;
+}
 
-        #two.style1 .content > p {
-            letter-spacing: 0.1em;
-        }
+#two.style1 .content p {
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
 
 /* Three */
-
 #three {
     background-color: #594336;
     text-align: center;
     padding: 20px;
 }
 
-    #three > h2 {
-        font-size: 2em;
-        font-weight: 300;
-        letter-spacing: 0.225em;
-        text-transform: uppercase;
-    }
+#three h2 {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+}
 
 /* Container */
-
 .container {
     background-color: #594336;
     margin: 0 auto;
@@ -308,41 +305,41 @@ i#hamburguer {
     gap: 30px;
 }
 
-    .container h3 {
-        font-size: 1.3em;
-        font-weight: 300;
-        letter-spacing: 0.225em;
-        text-transform: uppercase;
-    }
+.container h3 {
+    font-size: 1.3em;
+    font-weight: 300;
+    padding-top: 1em;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+}
 
-    .container p {
-        padding-bottom: 1em;
-        font-size: 1em;
-        font-weight: 300;
-        letter-spacing: 0.070em;
-        margin: 0 auto;
-        text-align: justify;
-    }
+.container p {
+    padding-bottom: 1em;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.070em;
+    margin: 0 auto;
+    text-align: justify;
+}
 
-    .container .card {
-        max-width: 33%;
-    }
+.container .card {
+    max-width: 350px;
+}
 
-    .card img {
-        width: 100%;
-        display: block;
-    }
+.card img {
+    width: 100%;
+    display: block;
+}
 
 /* Image */
-
 .image {
     border: 0;
     display: inline-block;
 }
 
-    .image img {
-        display: block;
-    }
+.image img {
+    display: block;
+}
 
 /* Footer */
 
@@ -351,23 +348,23 @@ footer .icons {
     justify-content: center;
 }
 
-    footer .icons a {
-        color: #fff;
-        background-color: #594336;
-        width: 50px;
-        height: 50px;
-        margin: 30px 5px 5px 5px ;
-        border-radius: 50px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.5s;
-        font-size: 30px;
-    }
+footer .icons a {
+    color: #fff;
+    background-color: #594336;
+    width: 50px;
+    height: 50px;
+    margin: 30px 5px 5px 5px ;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 30px;
+}
 
-        footer .icons a:hover {
-            background-color: #595958;
-        }
+footer .icons a:hover {
+    background-color: #595958;
+}
 
 footer .copyright {
     color: white;
@@ -382,29 +379,30 @@ footer .copyright {
 
 /* Página de contato */
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 16px;
+    padding: 6px 2px;
+}
+
 form > h3 {
     padding: 30px 0 15px 0;
     letter-spacing: 3px;
     font-size: 1.5em;
 }
 
-fieldset {
-    border: 0;
-    letter-spacing: 3px;
-}
-
-input, select, textarea {
-    border-radius: 3px;
-}
-
 .campo {
     margin-bottom: 1em;
 }
 
-    .campo > label {
-        margin-bottom: 0.2em;
-        display: block;
-    }
+.campo > label {
+    margin-bottom: 0.2em;
+    display: block;
+}
 
 .campo input[type="text"], .campo input[type="email"], .campo textarea {
     padding: 0.2em;
